@@ -1,0 +1,171 @@
+/* Global Styles */
+html, body {
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les marges par défaut */
+    height: 100%; /* Assurez que la page occupe toute la hauteur */
+    display: flex;
+    flex-direction: column; /* Organise la page verticalement */
+    font-family: "Sour Gummy", sans-serif;
+
+}
+
+main {
+    flex: 1; /* Permet à la section principale de prendre tout l'espace restant */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Produits */
+#products {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Bouton Acheter */
+.card .btn {
+    background-color:palevioletred;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+footer p, footer ul, footer a {
+    margin: 0;
+    padding: 0;
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer hr {
+    border: 1px solid #444;
+    margin: 20px 0;
+}
+
+footer p.mb-0 {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    #products {
+        background-color: #f9f9f9;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+.heloo{
+    background-color:rgb(110, 124, 150);
+}
+.helooo{
+    background-color:rgb(121, 131, 150) ;
+}
